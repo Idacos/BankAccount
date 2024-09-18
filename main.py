@@ -1,11 +1,11 @@
-#Author: Ilton da Costa Neto
-#Partner: Jack King
+# Author: Ilton da Costa Neto
+# Partner: Jack King
 from bank_account import BankAccount
 from checking_account import CheckingAccount
 from savings_account import SavingsAccount
 
-new_bank_one = BankAccount("Zach",100, 20)
-new_bank_two = BankAccount("Sarah",170, 30)
+new_bank_one = BankAccount("Zach", 100, 20)
+new_bank_two = BankAccount("Sarah", 170, 30)
 
 new_savings_one = SavingsAccount("001", "121314151", 0.05,
                                  "Ryan", 500, 20)
@@ -20,6 +20,22 @@ new_checking_two = CheckingAccount("817204626548", "619304926",
                                    "Alex", 100, 50,
                                    20)
 
+new_checking_one.print_checking_information()
+
+new_checking_one.checking_deposit(10)
+new_checking_one.print_checking_information()
+
+new_checking_one.checking_withdraw(60)
+new_checking_one.print_checking_information()
+
+new_checking_two.print_checking_information()
+
+new_checking_two.checking_deposit(30)
+new_checking_two.print_checking_information()
+
+new_checking_two.checking_withdraw(15)
+new_checking_two.print_checking_information()
+
 print("Accessing Ryan's savings account...")
 print("Adding amount to current balance")
 new_savings_one.deposit()
@@ -27,7 +43,7 @@ new_savings_one.print_savings_information()
 print("Adding interest...")
 new_savings_one.add_interest()
 
-print("Accessing Ryan's savings account...")
+print("Accessing Klara's savings account...")
 print("Adding amount to current balance")
 new_savings_two.deposit()
 new_savings_two.print_savings_information()
