@@ -12,12 +12,20 @@ new_savings_one = SavingsAccount("001", "121314151", 0.05,
 new_savings_two = SavingsAccount("007", "911171222", 0.1,
                                  "Klara", 250, 50)
 
+new_checking_one = CheckingAccount("203817263845", "293847162",
+                                   "Mike", 150, 10,
+                                   50)
+
+new_checking_two = CheckingAccount("817204626548", "619304926",
+                                   "Alex", 100, 50,
+                                   20)
+
 print("Accessing Ryan's savings account...")
 print("Adding amount to current balance")
 new_savings_one.deposit()
 new_savings_one.print_savings_information()
 print("Adding interest...")
-new_savings_two.add_interest()
+new_savings_one.add_interest()
 
 # optionOne = 0
 # while optionOne != 3:
