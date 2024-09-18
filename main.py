@@ -1,6 +1,7 @@
 #Author: Ilton da Costa Neto
 #Partner: Jack King
 from bank_account import BankAccount
+from checking_account import CheckingAccount
 
 new_bank_one = BankAccount("Zach",100, 20)
 new_bank_two = BankAccount("Sarah",170, 30)
