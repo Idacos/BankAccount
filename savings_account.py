@@ -9,4 +9,4 @@ class SavingsAccount(BankAccount):
         self.__routing_number = routing_number  # Private member
 
     def add_interest(self):
-        interst = self.current_balance * self.interest_rate
+        interest = self.current_balance * self.interest_rate
