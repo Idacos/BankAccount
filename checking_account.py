@@ -13,13 +13,25 @@ class CheckingAccount(BankAccount):
 
     def check_transfer(self, transfer_amount):
         if transfer_amount > self.transfer_limit:
-            print("Not allowed to transfer.")
+            print("Transfer Denied: Transfer limit exceeded.")
             return False
         else:
             print("Transfer allowed.")
             return True
 
-    def print_customer_information(self):
+    def checking_deposit(self, deposit_amount):
+        print(f"Amount to deposit: ${deposit_amount}")
+        if self.check_transfer(deposit_amount):
+            self.current_balance += deposit_amount
+            print(f"Deposited ${deposit_amount} into checking account.")
+
+    def checking_withdraw(self, withdraw_amount):
+        print(f"Amount to withdraw: ${withdraw_amount}")
+        if self.check_transfer(withdraw_amount):
+            self.current_balance -= withdraw_amount
+            print(f"Withdrew ${withdraw_amount} from checking account.")
+
+    def print_checking_information(self):
         print("\n")
         print(CheckingAccount.title)
         print(f"Customer Name: {self.customer_name}")
