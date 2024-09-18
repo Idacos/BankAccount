@@ -7,7 +7,17 @@ from savings_account import SavingsAccount
 new_bank_one = BankAccount("Zach",100, 20)
 new_bank_two = BankAccount("Sarah",170, 30)
 
+new_savings_one = SavingsAccount("001", "121314151", 0.05,
+                                 "Ryan", 500, 20)
+new_savings_two = SavingsAccount("007", "911171222", 0.1,
+                                 "Klara", 250, 50)
 
+print("Accessing Ryan's savings account...")
+print("Adding amount to current balance")
+new_savings_one.deposit()
+new_savings_one.print_savings_information()
+print("Adding interest...")
+new_savings_two.add_interest()
 
 # optionOne = 0
 # while optionOne != 3:

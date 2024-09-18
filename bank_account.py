@@ -15,8 +15,8 @@ class BankAccount:
     #method 1
     def deposit(self):
         amount = int(input("Enter amount to deposit: "))
-        if amount <= self.minimum_balance:
-            print()
+        # if amount <= self.minimum_balance:
+        #     print()
         self.current_balance += amount
 
     #method 2
