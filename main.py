@@ -27,6 +27,13 @@ new_savings_one.print_savings_information()
 print("Adding interest...")
 new_savings_one.add_interest()
 
+print("Accessing Ryan's savings account...")
+print("Adding amount to current balance")
+new_savings_two.deposit()
+new_savings_two.print_savings_information()
+print("Adding interest...")
+new_savings_two.add_interest()
+
 # optionOne = 0
 # while optionOne != 3:
 #     print("Which account would you like to access: ")
