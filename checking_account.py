@@ -1,7 +1,8 @@
-#Author: Ilton da Costa Neto
-#Partner: Jack King
+# Author: Ilton da Costa Neto
+# Partner: Jack King
 
 from bank_account import BankAccount
+
 
 class CheckingAccount(BankAccount):
     def __init__(self, account_number, routing_number, customer_name, current_balance, minimum_balance, transfer_limit):
@@ -23,5 +24,5 @@ class CheckingAccount(BankAccount):
         print(CheckingAccount.title)
         print(f"Customer Name: {self.customer_name}")
         print(f"Current Balance: {self.current_balance}")
-        print(f"Minimum Balance: {self.minimum_balance} \n")
-        print(f"Interest Rate: {self.transfer_limit} \n")
+        print(f"Minimum Balance: {self.minimum_balance}")
+        print(f"Transfer Limit: {self.transfer_limit} \n")
