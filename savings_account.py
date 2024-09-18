@@ -14,3 +14,10 @@ class SavingsAccount(BankAccount):
         self.current_balance += interest
         print(f"Interest added: {interest}, New balance: {self.current_balance}")
 
+    def print_savings_information(self):
+        print("\n")
+        print(SavingsAccount.title)
+        print(f"Customer Name: {self.customer_name}")
+        print(f"Current Balance: {self.current_balance}")
+        print(f"Minimum Balance: {self.minimum_balance} \n")
+        print(f"Interest Rate: {self.interest_rate} \n")

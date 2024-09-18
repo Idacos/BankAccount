@@ -17,3 +17,11 @@ class CheckingAccount(BankAccount):
         else:
             print("Transfer allowed.")
             return True
+
+    def print_customer_information(self):
+        print("\n")
+        print(CheckingAccount.title)
+        print(f"Customer Name: {self.customer_name}")
+        print(f"Current Balance: {self.current_balance}")
+        print(f"Minimum Balance: {self.minimum_balance} \n")
+        print(f"Interest Rate: {self.transfer_limit} \n")
